@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #E54A4A;
+    display: grid;
+    place-items: center;
+}
+
+.calculadora {
+    background-color: #fff;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: #636161;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #636161;;
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e6394a;
+}
+.bienvenida {
+    position: fixed;
+    top: 0; /* Alinea el mensaje en la parte superior de la página */
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(99, 97, 97, 0.7); /* Cambio de color de fondo para que el texto sea visible */
+    padding: 10px; /* Añade espacio alrededor del mensaje */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    height: 15%; /* Reduce la altura del recuadro para que no cubra la calculadora */
+}
+
+.bienvenida img {
+    max-width: 20%; /* Hace que la imagen ocupe la mitad de la pantalla horizontalmente */
+    margin-left: 10px; /* Agrega un margen a la izquierda de la imagen para separarla del texto */
+}
+
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #e6394a;
+}
+
+#igual:hover {
+    background-color: #e65766;
+}
+
